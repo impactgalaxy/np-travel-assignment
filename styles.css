@@ -11,6 +11,9 @@ body{
     font-optical-sizing: auto;
     margin: 0;
 }
+*{
+    scroll-behavior: smooth;
+}
 .flex-prop-column{
     display: flex;
     align-items: center;
@@ -303,10 +306,26 @@ header{
         grid-template-columns: 1fr;
     }
     .iframe{
-        padding: 2em;
+        width: 100%;
+        padding: 1em;
     }
     .hot-offer{
         padding: 1em;
         line-height: 1em;
     }
+    footer{
+        padding: 5%;
+    }
+}
+@media  only screen and (min-width: 600px) and (max-width: 992px) {
+    .discount-banner{
+        height: 100%;
+    }
+    .input-field{
+        flex-direction: column;
+    }
+    .where, select, .find-btn, .transit-banner{
+        width: 100%;
+    }
+    
 }
