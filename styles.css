@@ -6,9 +6,6 @@
     --heading-text-color: #131318;
     --all-btn-bg-color: #FF5400;
 }
-*{
-    border: 0.5px solid;
-}
 body{
     font-family: "Mulish", sans-serif;
     font-optical-sizing: auto;
@@ -28,7 +25,7 @@ body{
     gap: 1em;
 }
 .all-header-title{
-    font-size: 4em;
+    font-size: 3.5em;
     margin-bottom: 0;
     font-weight: 800;
 }
@@ -200,11 +197,69 @@ header{
 .price{
     font-weight: 700;
     font-size: 22px;
-    color: rgba(16, 68, 2, 0.884);
+    color: orangered;
+}
+.simple-perfect-place{
+    padding: 5%;
+}
+.perfect-place-statement{
+    padding: 1em;
+}
+.newsletter{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 1em;
+    padding: 5%;
+}
+.newsletter-statement{
+    padding: 2%;
+    border: 1px solid salmon;
+    border-radius: 1em;
+}
+.newsletter-statement input{
+    display: block;
+    height: 2rem;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.newsletter-image{
+    position: relative;
+    border-radius: 1em;
+}
+.hot-offer{
+    position: absolute;
+    bottom: 4em;
+    right: 2em;
+    transform: rotate(-45deg);
+    background-color: #FF5400;
+    color: rgb(255, 255, 255);
+    padding: 1em 2em;
+    border-radius: 1em;
+    border: 0;
+    text-align: center;
+    font-weight: 800;
+}
+.newsletter-image img{
+    width: 100%;
+    display: block;
+    border-radius: 1em;
+}
+.footer-statement{
+    padding: 5%;
+}
+.social-icon{
+    padding: 5%;
+}
+.social-icon a{
+    text-decoration: none;
+    color: rgb(5, 5, 5);
+    font-size: 1.5em;    
 }
 /* media query */
 @media only screen and (max-width: 600px){
-    header, .transit-banner, .why-choose-us{
+    header, .transit-banner, .why-choose-us, .discount-banner, .ne{
         padding: 2%;
         height: 100%;
     }
@@ -217,7 +272,7 @@ header{
     .all-header-title{
         font-size: 1.5em;
     }
-    .input-field, .popular-tours, .logs{
+    .input-field, .popular-tours, .logs, .simple-perfect-place{
         flex-direction: column;
     }
     .popular-tours{
@@ -243,5 +298,15 @@ header{
         margin: 0;
         width: 100%;
         height: auto;
+    }
+    .newsletter{
+        grid-template-columns: 1fr;
+    }
+    .iframe{
+        padding: 2em;
+    }
+    .hot-offer{
+        padding: 1em;
+        line-height: 1em;
     }
 }
